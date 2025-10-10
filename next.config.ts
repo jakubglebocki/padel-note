@@ -6,8 +6,6 @@ const nextConfig: NextConfig = {
     // Ignore ESLint errors during build for dev
     ignoreDuringBuilds: true,
   },
-  // Fix for multiple lockfiles warning
-  outputFileTracingRoot: require('path').join(__dirname, '../../'),
 };
 
 export default nextConfig;
