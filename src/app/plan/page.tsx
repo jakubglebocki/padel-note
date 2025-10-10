@@ -376,7 +376,7 @@ export default function PlanPage() {
             {SESSION_TYPE_OPTIONS.map((type) => {
               const Icon = type.icon;
               return (
-                <div key={type.type} className="flex items-center gap-2">
+                <div key={type.value} className="flex items-center gap-2">
                   <div
                     className="w-4 h-4 rounded-sm"
                     style={{ backgroundColor: type.color }}
