@@ -3,6 +3,8 @@
  * Combines training units, matches, and other activities
  */
 
+import { User, Users, Swords, Trophy, PartyPopper, Medal, Dumbbell, Heart, Zap, Eye, Bot, LucideIcon } from 'lucide-react';
+
 export type SessionType =
   | 'training_ind'
   | 'training_grp'
@@ -35,18 +37,18 @@ export interface Session {
   updatedAt: Date;
 }
 
-export const SESSION_TYPE_OPTIONS: Array<{ value: SessionType; label: string; color: string }> = [
-  { value: 'training_ind', label: 'Trening indywidualny', color: '#FF6B35' },
-  { value: 'training_grp', label: 'Trening grupowy', color: '#0EA5E9' },
-  { value: 'sparing', label: 'Sparing', color: '#A855F7' },
-  { value: 'match_league', label: 'Mecz ligowy', color: '#FFB800' },
-  { value: 'americano', label: 'Americano', color: '#00D9B4' },
-  { value: 'tournament', label: 'Turniej', color: '#F59E0B' },
-  { value: 'gym', label: 'Siłownia', color: '#EF4444' },
-  { value: 'recovery', label: 'Regeneracja', color: '#10B981' },
-  { value: 'mobility', label: 'Mobilność', color: '#8B5CF6' },
-  { value: 'watch_match', label: 'Oglądanie meczu', color: '#6B7280' },
-  { value: 'machine_training', label: 'Trening z maszyną', color: '#38BDF8' },
+export const SESSION_TYPE_OPTIONS: Array<{ value: SessionType; label: string; color: string; icon: LucideIcon }> = [
+  { value: 'training_ind', label: 'Trening indywidualny', color: '#FF6B35', icon: User },
+  { value: 'training_grp', label: 'Trening grupowy', color: '#0EA5E9', icon: Users },
+  { value: 'sparing', label: 'Sparing', color: '#A855F7', icon: Swords },
+  { value: 'match_league', label: 'Mecz ligowy', color: '#FFB800', icon: Trophy },
+  { value: 'americano', label: 'Americano', color: '#00D9B4', icon: PartyPopper },
+  { value: 'tournament', label: 'Turniej', color: '#F59E0B', icon: Medal },
+  { value: 'gym', label: 'Siłownia', color: '#EF4444', icon: Dumbbell },
+  { value: 'recovery', label: 'Regeneracja', color: '#10B981', icon: Heart },
+  { value: 'mobility', label: 'Mobilność', color: '#8B5CF6', icon: Zap },
+  { value: 'watch_match', label: 'Oglądanie meczu', color: '#6B7280', icon: Eye },
+  { value: 'machine_training', label: 'Trening z maszyną', color: '#38BDF8', icon: Bot },
 ];
 
 /**
